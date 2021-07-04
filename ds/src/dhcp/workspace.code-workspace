@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"time.h": "c",
+			"cmath": "c",
+			"limits.h": "c"
+		}
+	}
+}

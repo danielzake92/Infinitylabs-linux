@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        ".myfuncs": "shellscript",
+        "array": "c",
+        "random": "c"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "watchdog.h": "c",
+        "watchdog_util.h": "c",
+        "stdlib.h": "c",
+        "signal.h": "c",
+        "types.h": "c",
+        "assert.h": "c",
+        "wait.h": "c",
+        "unistd.h": "c"
+    },
+    "C_Cpp.errorSquiggles": "Disabled"
+}

@@ -1,0 +1,42 @@
+Title: INPUT MEDIATOR
+
+Participant MASTER
+Participant FrameWork
+Participant Socket
+Participant Reactor
+Participant InputProxy
+Participant InputMediator
+Participant Factory
+Participant DirMonitor
+Participant CMD_SO
+Participant ThreadPool
+Participant Logger
+
+MASTER->FrameWork:Creation of FrameWork
+Note right of MASTER: gives specification\n of InputProxy
+FrameWork->InputMediator:Instatiation and Init of InputMediator
+FrameWork->Factory:Singleton of Factory
+FrameWork->DirMonitor:Instatiation and Init of DirMonitor
+FrameWork->ThreadPool:Singleton of ThreadPool
+FrameWork->Logger:Singleton of Logger
+InputMediator->Reactor:Instatiation of Reactor
+InputMediator->InputProxy:Points on specification\n of InputProxy
+InputMediator->Reactor:Registers Socket and InputProxy
+
+InputMediator->Reactor:Runs Reactor
+
+Note over CMD_SO,DirMonitor:Asynchomously Start
+Note over DirMonitor:AWAKES
+DirMonitor->CMD_SO:Async load
+CMD_SO-->Factory:Teaching new CMD
+Note over CMD_SO,DirMonitor:Asynchomously End
+
+Reactor->Socket:Listening
+Note over Reactor:AWAKES
+InputProxy->Socket:Read NBDish
+Socket-->InputProxy:Raw Data
+InputProxy->InputMediator:InputMediatorPacket
+InputMediator->Factory:Asks for Factorization
+Factory-->InputMediator:Cmd obj
+Note over InputMediator:Task abstraction
+InputMediator->ThreadPool:Send task

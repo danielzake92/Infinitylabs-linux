@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        ".myfuncs": "shellscript",
+        "in.h": "c",
+        "ip.h": "c",
+        "cstdio": "cpp",
+        "string.h": "c",
+        "netdb.h": "c",
+        "time.h": "c",
+        "types.h": "c"
+    }
+}

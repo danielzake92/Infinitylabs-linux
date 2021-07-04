@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "hash_table.h": "c",
+        "utl.h": "c",
+        "cmath": "c",
+        "assert.h": "c"
+    },
+    "C_Cpp.errorSquiggles": "Disabled"
+}

@@ -1,0 +1,16 @@
+{
+    "files.associations": {
+        "types.h": "c",
+        "assert.h": "c",
+        "*.tcc": "c",
+        "time.h": "c",
+        "stdlib.h": "c",
+        "string.h": "c",
+        "signal.h": "c",
+        "pthread.h": "c",
+        "semaphore.h": "c",
+        "unistd.h": "c",
+        "errno.h": "c"
+    },
+    "C_Cpp.errorSquiggles": "Disabled"
+}

@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        ".myfuncs": "shellscript",
+        "stdio.h": "c",
+        "unistd.h": "c",
+        "ipc.h": "c"
+    }
+}

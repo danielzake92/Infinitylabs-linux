@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        ".myfuncs": "shellscript",
+        "*.ipp": "cpp"
+    }
+}

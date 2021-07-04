@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "avl.h": "c",
+        "utl.h": "c"
+    }
+}

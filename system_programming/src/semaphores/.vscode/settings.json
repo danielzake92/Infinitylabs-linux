@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "typeinfo": "c",
+        "assert.h": "c",
+        "stat.h": "c",
+        "string.h": "c",
+        "types.h": "c",
+        "time.h": "c"
+    }
+}
