@@ -56,7 +56,7 @@ public:
     /* Pause threads in pool from acquiring new tasks */
     void Pause();
     /* Stop threads in pool for acquiring new tasks and empty queue of tasks */
-    void Stop();
+    void Stop(); 
 
     void SetNumOfThreads(size_t num_threads);
 /*****************************************************************************/
